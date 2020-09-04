@@ -18,5 +18,5 @@ const changeFilter = category => ({
 });
 
 export {
-  createBook, removeBook, changeFilter, CREATE_BOOK, REMOVE_BOOK,
+  createBook, removeBook, changeFilter, CREATE_BOOK, REMOVE_BOOK, CHANGE_FILTER,
 };
