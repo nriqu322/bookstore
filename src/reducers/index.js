@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import book from './books';
+import booksReducer from './books';
 
-export default combineReducers({ book });
+export default combineReducers({ books: booksReducer });
