@@ -23,7 +23,7 @@ class BooksForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const { title, category } = this.state;
-    const { createBook } = this.props;
+    const { addBook } = this.props;
 
     const book = {
       id: Math.floor(Math.random() * 5000),
@@ -32,7 +32,7 @@ class BooksForm extends React.Component {
     };
 
     this.setState({ title: '' });
-    createBook(book);
+    addBook(book);
   }
 
   render() {
@@ -54,13 +54,13 @@ class BooksForm extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  createBook: book => {
+  addBook: book => {
     dispatch(createBook(book));
   },
 });
 
 BooksForm.propTypes = {
-  createBook: PropTypes.func.isRequired,
+  addBook: PropTypes.func.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(BooksForm);
