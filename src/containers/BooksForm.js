@@ -54,7 +54,7 @@ class BooksForm extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  addBook: book => {
+  createBook: book => {
     dispatch(createBook(book));
   },
 });
@@ -63,4 +63,4 @@ BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
 
-export default connect(mapDispatchToProps)(BooksForm);
+export default connect(null, mapDispatchToProps)(BooksForm);
