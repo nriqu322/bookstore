@@ -46,11 +46,15 @@ BooksList.propTypes = {
 
 const mapStateToProps = state => ({
   books: state.books,
+  category: state.category,
 });
 
 const mapDispatchToProps = dispatch => ({
   removeBook: id => {
     dispatch(removeBook(id));
+  },
+  changeFilter: category => {
+    dispatch(changeFilter(category));
   },
 });
 
