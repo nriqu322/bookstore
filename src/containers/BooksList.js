@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Book from '../components/book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
-import CategoryFiler from '../components/CategoryFilter';
 
 const BooksList = props => {
   const { books, removeBook, changeFilter, filter } = props;
@@ -19,7 +18,7 @@ const BooksList = props => {
 
   return (
     <>
-      <CategoryFiler handleChangeFilter={handleChangeFilter} />
+      <CategoryFilter handleChangeFilter={handleChangeFilter} />
       <table>
         <thead>
           <tr>
@@ -42,6 +41,7 @@ const BooksList = props => {
 BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
   removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
