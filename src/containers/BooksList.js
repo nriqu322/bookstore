@@ -14,13 +14,13 @@ const BooksList = props => {
     removeBook(book);
   };
 
-  const handleChangeFilter = category => {
-    changeFilter(category);
+  const handleChangeFilter = filter => {
+    changeFilter(filter);
   };
 
   return (
     <>
-      <CategoryFilter handleChangeFilter={handleChangeFilter} />
+      <CategoryFilter changeFilter={handleChangeFilter} />
       <table>
         <thead>
           <tr>
@@ -60,8 +60,8 @@ const mapDispatchToProps = dispatch => ({
   removeBook: id => {
     dispatch(removeBook(id));
   },
-  changeFilter: category => {
-    dispatch(changeFilter(category));
+  changeFilter: filter => {
+    dispatch(changeFilter(filter));
   },
 });
 
