@@ -16,7 +16,7 @@ function App() {
           </ul>
         </div>
         <div>
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faUser} id="user-profile" />
         </div>
       </header>
       <BookList />
