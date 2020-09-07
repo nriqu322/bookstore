@@ -14,13 +14,13 @@ const BooksList = props => {
     removeBook(book);
   };
 
-  const handleChangeFilter = filter => {
+  const handleFilterChange = filter => {
     changeFilter(filter);
   };
 
   return (
     <>
-      <CategoryFilter changeFilter={handleChangeFilter} />
+      <CategoryFilter changeFilter={handleFilterChange} />
       <table>
         <thead>
           <tr>
