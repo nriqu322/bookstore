@@ -19,6 +19,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 100px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .left-header {
@@ -28,11 +31,28 @@ header {
 .bookstore-title {
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
   color: #0290ff;
+  align-self: center;
 }
 
 ul {
   display: flex;
   list-style: none;
+  letter-spacing: 1.9px;
+  font-size: 13px;
+  color: #121212;
+}
+
+li:last-child {
+  padding-left: 40px;
+  opacity: 0.5;
+}
+
+#user-profile {
+  color: #0290ff;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  padding: 12px;
 }
