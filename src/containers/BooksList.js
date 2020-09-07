@@ -14,8 +14,8 @@ const BooksList = props => {
     removeBook(book);
   };
 
-  const handleFilterChange = filter => {
-    changeFilter(filter);
+  const handleFilterChange = e => {
+    changeFilter(e.target.value);
   };
 
   return (
