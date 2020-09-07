@@ -56,3 +56,29 @@ li:last-child {
   width: 45px;
   padding: 12px;
 }
+
+.category-container {
+  display: flex;
+  font-size: 20px;
+  letter-spacing: -0.18px;
+  color: #888888;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 100px;
+}
+
+.category-container div {
+  align-self: center;
+  padding-right: 25px;
+}
+
+.category-filter {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  height: 40px;
+  width: 285px;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  padding: 12px;
+}
