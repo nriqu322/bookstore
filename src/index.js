@@ -15,11 +15,6 @@ const initialState = {
     },
     {
       id: Math.floor(Math.random() * 100),
-      title: 'Anne Frank: The Diary of a Young Girl ',
-      category: 'Biography',
-    },
-    {
-      id: Math.floor(Math.random() * 100),
       title: 'The Shining',
       category: 'Horror',
     },
