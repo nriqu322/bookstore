@@ -20,7 +20,12 @@ function App() {
         </div>
       </header>
       <BookList />
-      <BookForm />
+      <div className="form-container">
+        <div className="form-title">
+          ADD NEW BOOK
+        </div>
+        <BookForm />
+      </div>
     </div>
   );
 }
