@@ -4,6 +4,21 @@ This project is a requirement of the Microverse curriculum.
 
 Magic-books Inc. is a fictional company based in Germany. They have requested to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions.
 
+## Live Version
+
+* [See live version here](https://nriqu3-bookstore.herokuapp.com/)
+
+![bookstore](src/assets/screenshot.png)
+
+## Build with
+* JavaScript
+* [Create React App](https://github.com/facebook/create-react-app)
+* React
+* Redux
+* Heroku
+* ESlint and Stylelint as linters
+* Font Awesome icons
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -41,3 +56,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Author
+
+👤 **Luis Saavedra**
+- Github: [@nriqu322](https://github.com/nriqu322)
+- Twitter: [@nriqu322](https://twitter.com/nriqu322)
+- Linkedin: [Luis Saavedra](https://linkedin.com/in/luis-saavedra-sanchez/)
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+[Microverse](https://microverse.org)
+
+---
