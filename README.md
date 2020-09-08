@@ -8,7 +8,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested to
 
 * [See live version here](https://nriqu3-bookstore.herokuapp.com/)
 
-![bookstore](assets/screenshot.png)
+![bookstore](src/assets/screenshot.png)
 
 ## Build with
 * JavaScript
@@ -17,6 +17,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested to
 * Redux
 * Heroku
 * ESlint and Stylelint as linters
+* Font Awesome icons
 
 ## Available Scripts
 
