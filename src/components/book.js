@@ -7,11 +7,25 @@ const Book = ({ book, removeBook }) => {
   };
 
   return (
-    <tr>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-      <td><button type="button" onClick={handleRemoveBook}>Remove</button></td>
+    <tr className="book-element">
+      <div className="first-element">
+        <td>{book.category}</td>
+        <td>{book.title}</td>
+        <td>
+          Book id #
+          {book.id}
+        </td>
+        <td><button type="button" onClick={handleRemoveBook}>Remove</button></td>
+      </div>
+      <div className="second-element">
+        <span>64%</span>
+        <span>Completed</span>
+      </div>
+      <div className="third-element">
+        <span>CURRENT CHAPTER</span>
+        <span>Chapter 13</span>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
     </tr>
   );
 };

@@ -24,16 +24,16 @@ const BooksList = props => {
         <div>CATEGORY FILTER:</div>
         <CategoryFilter changeFilter={handleFilterChange} />
       </div>
-      <table>
-        <thead>
+      <table className="books-table">
+        {/* <thead>
           <tr>
-            <th>Book ID</th>
-            <th>Title</th>
             <th>Category</th>
+            <th>Title</th>
+            <th>Book ID</th>
             <th>Remove</th>
           </tr>
-        </thead>
-        <tbody>
+        </thead> */}
+        <tbody className="">
           {
           books
             .filter(book => book.category === filter || filter === 'All')
@@ -42,6 +42,7 @@ const BooksList = props => {
             ))
           }
         </tbody>
+
       </table>
     </>
   );

@@ -65,6 +65,7 @@ li:last-child {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   padding: 20px 100px;
+  background-color: #fafafa;
 }
 
 .category-container div {
@@ -81,4 +82,29 @@ li:last-child {
   font-size: 16px;
   letter-spacing: -0.15px;
   padding: 12px;
+}
+
+.books-table {
+  padding: 15px 100px;
+  display: flex;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.book-element {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 170px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 32px 50px 28px 27px;
+}
+
+.first-element,
+.second-element,
+.third-element {
+  display: flex;
+  flex-direction: column;
 }
