@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f5f6fA;
+  background-color: #f5f6fa;
 }
 
 .App {
@@ -62,7 +62,7 @@ li:last-child {
   display: flex;
   font-size: 20px;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   padding: 20px 100px;
@@ -111,6 +111,10 @@ li:last-child {
   justify-content: center;
 }
 
+.first-element-options span {
+  margin-right: 10px;
+}
+
 .percentage span:first-child {
   font-size: 32px;
 }
@@ -134,10 +138,6 @@ li:last-child {
 .first-element-options {
   display: flex;
   margin-top: 20px;
-}
-
-.first-element-options span {
-  margin-right: 10px;
 }
 
 .first-element-category {
@@ -246,9 +246,8 @@ li:last-child {
   margin-top: 20px;
 }
 
-#book-form 
-  input,
-  select {
+#book-form input,
+select {
   background-color: #fff;
   height: 45px;
   border-radius: 4px;
