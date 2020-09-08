@@ -20,16 +20,11 @@ const BooksList = props => {
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
+      <div className="category-container">
+        <div>CATEGORY FILTER:</div>
+        <CategoryFilter changeFilter={handleFilterChange} />
+      </div>
+      <table className="books-table">
         <tbody>
           {
           books
@@ -39,6 +34,7 @@ const BooksList = props => {
             ))
           }
         </tbody>
+
       </table>
     </>
   );

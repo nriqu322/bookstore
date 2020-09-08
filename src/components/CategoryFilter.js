@@ -8,7 +8,7 @@ const CategoryFilter = ({ changeFilter }) => {
   };
 
   return (
-    <select name="category" onChange={handleFilterChange}>
+    <select name="category" className="category-filter" onChange={handleFilterChange}>
       {categories.map(category => (
         <option key={category} value={category}>{category}</option>
       ))}
