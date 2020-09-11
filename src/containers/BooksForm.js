@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
+import { saveBook } from '../services/store';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class BooksForm extends React.Component {
     if (title) {
       this.setState({ title: '' });
       addBook(book);
+      saveBook(book);
     }
   }
 
