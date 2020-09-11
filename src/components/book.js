@@ -9,20 +9,20 @@ const Book = ({ book, removeBook }) => {
   };
 
   return (
-    <tr className="book-element">
+    <div className="book-element">
       <div className="first-element">
         <div className="first-element-detail">
-          <td className="first-element-category">{book.category}</td>
-          <td className="first-element-title">{book.title}</td>
-          <td className="first-element-id">
+          <div className="first-element-category">{book.category}</div>
+          <div className="first-element-title">{book.title}</div>
+          <div className="first-element-id">
             Book id #
             {book.id}
-          </td>
+          </div>
         </div>
         <div className="first-element-options">
           <span>Comments</span>
           <span>|</span>
-          <td><button className="first-element-button" type="button" onClick={handleRemoveBook}>Remove</button></td>
+          <button className="first-element-button" type="button" onClick={handleRemoveBook}>Remove</button>
           <span>|</span>
           <span>Edit</span>
         </div>
@@ -40,7 +40,7 @@ const Book = ({ book, removeBook }) => {
         <span className="third-element-second">Chapter 13</span>
         <button type="button" className="third-element-third">UPDATE PROGRESS</button>
       </div>
-    </tr>
+    </div>
   );
 };
 

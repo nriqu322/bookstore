@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+// import { getBooks } from '../services/store';
 
 const BooksList = props => {
   const {
@@ -24,8 +25,8 @@ const BooksList = props => {
         <div>CATEGORY FILTER:</div>
         <CategoryFilter changeFilter={handleFilterChange} />
       </div>
-      <table className="books-table">
-        <tbody>
+      <div className="books-table">
+        <div>
           {
           books
             .filter(book => book.category === filter || filter === 'All')
@@ -33,9 +34,9 @@ const BooksList = props => {
               <Book key={book.id} book={book} removeBook={handleRemoveBook} />
             ))
           }
-        </tbody>
+        </div>
 
-      </table>
+      </div>
     </>
   );
 };
