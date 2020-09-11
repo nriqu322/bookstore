@@ -10,8 +10,12 @@ const saveBook = (category = 'Action', book) => {
     .then(response => response.data);
 };
 
-const getBooks = () => axios
+// const getBooks = () => axios
+//   .get(url)
+//   .then(response => response.data);
+
+const getBooks = async setBooks => axios
   .get(url)
-  .then(response => response.data.result);
+  .then(response => setBooks(response.data));
 
 export { getBooks, saveBook };

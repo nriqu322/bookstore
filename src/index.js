@@ -21,7 +21,7 @@ const initialState = {
     {
       id: Math.floor(Math.random() * 100),
       title: 'Journey to the Center of the Earth',
-      category: 'Sci-fi',
+      category: 'Sci-Fi',
     },
   ],
   filter: 'All',

@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
-// import { getBooks } from '../services/store';
+import { getBooks } from '../services/store';
 
 const BooksList = props => {
   const {
-    books, removeBook, changeFilter, filter,
+    removeBook, changeFilter, filter,
   } = props;
+  const [books, setBooks] = useState([]);
 
   const handleRemoveBook = book => {
     removeBook(book);
@@ -18,6 +19,18 @@ const BooksList = props => {
   const handleFilterChange = e => {
     changeFilter(e.target.value);
   };
+
+  useEffect(() => {
+    getBooks(setBooks);
+    // fetch('https://nriqu3-bookstore-api.herokuapp.com/api/v1/books')
+    //   .then(res => res.json())
+    //   .then(response => {
+    //     setBooks(response);
+    //   })
+    //   .catch(error => error);
+  }, []);
+
+  console.log(books);
 
   return (
     <>
@@ -42,7 +55,7 @@ const BooksList = props => {
 };
 
 BooksList.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
+  // books: PropTypes.instanceOf(Array).isRequired,
   removeBook: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
