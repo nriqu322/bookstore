@@ -13,7 +13,7 @@ const BooksList = props => {
   const [books, setBooks] = useState([]);
 
   const handleRemoveBook = book => {
-    deleteBook(book.id).then(() => {
+    deleteBook(book).then(() => {
       removeBook(book);
     });
   };
