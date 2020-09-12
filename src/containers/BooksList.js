@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/book';
 import { removeBook, changeFilter } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
-import { getBooks } from '../services/store';
+import { getBooks, deleteBook } from '../services/store';
 
 const BooksList = props => {
   const {
@@ -13,7 +13,10 @@ const BooksList = props => {
   const [books, setBooks] = useState([]);
 
   const handleRemoveBook = book => {
+    deleteBook(book.id);
     removeBook(book);
+
+    window.location.reload();
   };
 
   const handleFilterChange = e => {
@@ -29,8 +32,6 @@ const BooksList = props => {
     //   })
     //   .catch(error => error);
   }, []);
-
-  console.log(books);
 
   return (
     <>

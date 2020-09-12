@@ -18,4 +18,7 @@ const getBooks = async setBooks => axios
   .get(url)
   .then(response => setBooks(response.data));
 
-export { getBooks, saveBook };
+const deleteBook = async id => axios
+  .delete(`${url}/${id}`);
+
+export { getBooks, saveBook, deleteBook };
