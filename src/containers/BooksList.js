@@ -13,10 +13,9 @@ const BooksList = props => {
   const [books, setBooks] = useState([]);
 
   const handleRemoveBook = book => {
-    deleteBook(book.id);
-    removeBook(book);
-
-    window.location.reload();
+    deleteBook(book.id).then(() => {
+      removeBook(book);
+    });
   };
 
   const handleFilterChange = e => {
@@ -25,12 +24,6 @@ const BooksList = props => {
 
   useEffect(() => {
     getBooks(setBooks);
-    // fetch('https://nriqu3-bookstore-api.herokuapp.com/api/v1/books')
-    //   .then(res => res.json())
-    //   .then(response => {
-    //     setBooks(response);
-    //   })
-    //   .catch(error => error);
   }, []);
 
   return (

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Book = ({ book, removeBook }) => {
   const handleRemoveBook = () => {
     removeBook(book);
+    window.location.reload(false);
   };
 
   return (

@@ -10,15 +10,12 @@ const saveBook = (book, category = 'Action') => {
     .then(response => response.data);
 };
 
-// const getBooks = () => axios
-//   .get(url)
-//   .then(response => response.data);
-
 const getBooks = async setBooks => axios
   .get(url)
   .then(response => setBooks(response.data));
 
 const deleteBook = async id => axios
-  .delete(`${url}/${id}`);
+  .delete(`${url}/${id}`)
+  .then(response => response.data);
 
 export { getBooks, saveBook, deleteBook };
